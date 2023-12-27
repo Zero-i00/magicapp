@@ -1,11 +1,12 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { Text } from 'react-native'
+import Layout from '../../layout/Layout'
 
 const Auth = () => {
 	return (
-		<View>
+		<Layout>
 			<Text>Auth</Text>
-		</View>
+		</Layout>
 	)
 }
 
