@@ -11,3 +11,7 @@ export interface IProduct extends IBase {
 	description: string | null
 	categories: ICategory[]
 }
+
+export interface IPotionsProductResponse {
+	products: IProduct[]
+}

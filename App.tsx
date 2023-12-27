@@ -8,7 +8,7 @@ function App() {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <SafeAreaProvider style={{flex: 1}}>
+        <SafeAreaProvider className={`bg-white`} style={{flex: 1}}>
           <Navigation />
         </SafeAreaProvider>
       </PersistGate>

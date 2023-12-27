@@ -1,4 +1,4 @@
-import { TypeRootStackParamList } from '../../../navigation/navigation.types'
+import { TypeRootStackParamList } from '../../../../navigation/navigation.types'
 import { Entypo } from '@expo/vector-icons';
 
 export interface IMenuItem {

@@ -1,7 +1,8 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query'
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
+import { SERVER_URL } from '../../constants/base.constants'
 
 
-const API_URL = 'http://192.168.31.220:8000/api/v1/'
+const API_URL = `${SERVER_URL}/api/v1/`
 
 export const api = createApi({
 	reducerPath: 'api',
@@ -20,3 +21,4 @@ export const api = createApi({
 	})
 })
 
+export const {useBaseQuery} = api

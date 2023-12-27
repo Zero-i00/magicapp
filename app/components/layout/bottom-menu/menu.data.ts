@@ -1,14 +1,14 @@
-import { IMenuItem } from './menu.interface'
+import { IMenuItem } from './bottom-menu-item/menu.interface'
 
 export const menuData: IMenuItem[] = [
 	{
 		path: 'Catalog',
-		title: 'Каталог',
+		title: 'Лавка',
 		icon: 'shop',
 	},
 	{
 		path: 'Order',
-		title: 'Заказы',
+		title: 'Портал',
 		icon: 'compass'
 	}
 ]

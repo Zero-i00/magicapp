@@ -7,7 +7,7 @@ export const authAPI = api.injectEndpoints({
 		login: build.mutation<IUserResponse, IUserQuery>({
 			query: user => ({
 				body: user,
-				url: 'auth',
+				url: 'users/me/',
 				method: 'POST'
 			})
 		}),

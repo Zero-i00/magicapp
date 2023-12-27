@@ -26,13 +26,14 @@ const Navigation = () => {
 		}
 	}, [])
 
+	const max_level = user?.groups.find(group => group.name.toLowerCase() === 'mage third level')
 
 	return (
 		<>
 			<NavigationContainer ref={navRef}>
 				<PrivateNavigation />
 			</NavigationContainer>
-			{user && currentRoute && (
+			{user && !max_level &&  currentRoute && (
 				<BottomMenu nav={navRef.navigate} currentRoute={currentRoute}/>
 			)}
 		</>

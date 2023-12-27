@@ -17,18 +17,18 @@ const Layout: FC<PropsWithChildren<ILayout>> = ({children, title, className, ...
 		<>
 			<SafeAreaView
 				{...rest}
-				className={cn(`bg-gray/5`, className)}
+				className={cn(`bg-white`, className)}
 				style={{
 					paddingTop: Platform.OS === 'ios' ? top / 5 : top * 1.1
 				}
 			}>
 				{title && (
-					<View className={`w-full px-4 py-2 bg-white shadow-2xl rounded-b-xl flex flex-row justify-between items-center`}>
-						<Text className={`text-black text-xl font-semibold`}>
+					<View className={`w-full px-4 py-6 bg-white shadow-2xl rounded-b-xl flex flex-row justify-between items-center`}>
+						<Text className={`text-black text-2xl font-semibold`}>
 							{title}
 						</Text>
 						{user && (
-							<Button onPress={() => logout}>
+							<Button onPress={() => logout()}>
 								<Text className={`text-primary text-base font-medium`}>
 									Выйти
 								</Text>

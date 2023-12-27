@@ -15,7 +15,8 @@ export interface IUserQuery extends Pick<IUser, 'username'> {
 }
 
 export interface IUserResponse {
-	auth_token: string
+	token: string
+	user: IUser
 }
 
 export interface IUserState {
