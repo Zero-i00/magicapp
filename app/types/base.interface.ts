@@ -4,6 +4,10 @@ export interface IBase {
 	id: number
 }
 
+export interface IBaseResponse {
+	status: number
+}
+
 export interface IBaseListResponse<T> {
 	count: number
 	next: null | boolean
