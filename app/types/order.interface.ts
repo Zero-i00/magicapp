@@ -11,7 +11,12 @@ export interface IOrder extends IBase {
 	product: IProduct
 }
 
-export interface IOrderQuery extends Omit<IOrder, 'id' | 'datetime'> {}
+export interface IOrderQuery {
+	client: number
+	seller: number
+	product: number
+	amount: number
+}
 
 export interface IOrderState {
 	orderProduct: IProduct | null
